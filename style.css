@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    padding: 40px;
+    padding-top: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-row-gap: 50px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px;
+    -webkit-box-shadow: 5px 5px 29px 5px rgba(0, 0, 0, 0.17);
+    box-shadow: 5px 5px 29px 5px rgba(0, 0, 0, 0.17);
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.card-image {
+    width: 150px;
+}
+
+.card-price-quantity-container {
+    width: 100%;
+}
+
+input {
+    width: 40px;
+    height: 25px;
+    border: 2px solid gray;
+    border-radius: 8px;
+    outline: none;
+    color: black;
+    transition: .3s ease;
+    text-align: center;
+}
+
+input::placeholder {
+    color: #9e9ea7;
+}
+
+input:focus, input:hover {
+    outline: none;
+    border-color: royalblue;
+    background-color: #fff;
+}
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.card-link {
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.buttons{
+    position: fixed;
+    background: rgb(239, 239, 239);
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.event-button{
+    padding: 20px;
+}
